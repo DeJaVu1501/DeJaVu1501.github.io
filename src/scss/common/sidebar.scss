@@ -1,0 +1,51 @@
+.sidebar {
+    margin-left: -12px;
+
+    @media (max-width: '768px') {
+        margin-left: 0;
+    }
+
+    .nav-pills {
+        .nav-item {
+            width: 100%;
+
+            @media (max-width: '768px') {
+                width: auto;
+            }
+
+            .nav-link {
+                color: $grey-light;
+                font-weight: 700;
+
+                &.active {
+                    border-radius: 8px;
+                    box-shadow: none;
+                    color: white;
+
+                    .allCards__svg {
+                        path {
+                            stroke: white;
+                            fill: white;
+                        }
+                    }
+
+                    .deleteCard__svg {
+                        path {
+                            fill: white;
+                        }
+                    }
+
+                    svg {
+                        path {
+                            stroke: white;
+
+                            &:not(:first-child) {
+                                fill: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<%= _.template(require('../includes/common/head.html').default)() %>
+
+  <body>
+    <%= _.template(require('../includes/common/header.html').default)() %>
+      <main>
+        <div class="container-lg d-flex row mx-auto">
+          <%= _.template(require('../includes/common/sidebar.html').default)() %>
+            <%= _.template(require('../includes/common/content.html').default)() %>
+        </div>
+      </main>
+  </body>
+
+</html>

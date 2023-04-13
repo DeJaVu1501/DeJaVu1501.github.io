@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="../../../scss/style.scss" />
+    <title></title>
+    <link href="./css/style.bundle.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header py-3">
+      <nav class="navbar navbar-expand-lg p-0">
+        <div class="container-lg">
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+            <div class="navbar__leftSide col-lg-3 me-auto">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item me-2"><a class="nav-link active fs-6" aria-current="page" href="#">Photos</a></li>
+                <li class="nav-item me-2"><a class="nav-link fs-6" href="#">Videos</a></li>
+                <li class="nav-item me-2"><a class="nav-link fs-6" href="#">Podcasts</a></li>
+              </ul>
+            </div>
+            <div class="navbar__rightSide col-lg-8 d-lg-flex align-items-center">
+              <form class="search col-sm-12 col-lg-9 mb-2 mb-lg-0 me-lg-auto" role="search">
+                <img class="search__icon" src="../src/assets/icons/searchIcon.svg" alt="icon" />
+                <input
+                  class="form-control me-2 rounded-pill ps-5"
+                  type="search"
+                  placeholder="Search for anything..."
+                  aria-label="Search"
+                />
+              </form>
+              <select class="form-select mb-1 mb-lg-0 me-2 w-auto ps-0">
+                <option selected="selected">English</option>
+              </select>
+              <a class="signInLink" href="#">Sign in</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container-lg d-flex row mx-auto">
+        <aside class="sidebar d-flex flex-column min-vh-md-100 col-md-3 col-sm-12 me-auto ps-md-0 pt-3">
+          <ul class="nav nav-pills flex-md-column mb-4 mb-md-0 align-items-center align-items-sm-start w-100" id="menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link px-15 py-8 d-flex align-items-center active"
+                ><svg
+                  class="allCards__svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 6.5C13.6193 6.5 12.5 7.61929 12.5 9C12.5 10.3807 13.6193 11.5 15 11.5C16.3807 11.5 17.5 10.3807 17.5 9C17.5 7.61929 16.3807 6.5 15 6.5Z"
+                    fill="#666666"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3 3H21V21H18.5266L18.4945 21.0002H5.5L5.46787 21H3V3ZM19 12.8362C17.8552 13.898 16.7044 14.4537 15 14.4537C13.0944 14.4537 11.6208 13.2859 10.1527 11.7048C9.15108 10.6262 7.51491 10.4335 6.29018 11.25L6.26758 11.2651L5 12.2134V5H19V12.8362Z"
+                    fill="#666666"
+                  />
+                </svg>
+                <span class="ms-3 d-none d-sm-inline">All photos</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-15 py-8 d-flex align-items-center"
+                ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.5 12C17.5 15.0376 15.0376 17.5 12 17.5C8.96243 17.5 6.5 15.0376 6.5 12M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                    stroke="#666666"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M11 9C11 9.82843 10.3284 10.5 9.5 10.5C8.67157 10.5 8 9.82843 8 9C8 8.17157 8.67157 7.5 9.5 7.5C10.3284 7.5 11 8.17157 11 9Z"
+                    fill="#666666"
+                  />
+                  <path
+                    d="M16 9C16 9.82843 15.3284 10.5 14.5 10.5C13.6716 10.5 13 9.82843 13 9C13 8.17157 13.6716 7.5 14.5 7.5C15.3284 7.5 16 8.17157 16 9Z"
+                    fill="#666666"
+                  />
+                </svg>
+                <span class="ms-3 d-none d-sm-inline">Selfies</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-15 py-8 d-flex align-items-center"
+                ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 8V12L14.5 14.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                    stroke="#666666"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                  />
+                </svg>
+                <span class="ms-3 d-none d-sm-inline">Recent</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-15 py-8 d-flex align-items-center"
+                ><svg
+                  class="deleteCard__svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 21L5.00221 21.0665L5.06445 22H6V21ZM18 21V22H18.9356L18.9978 21.0665L18 21ZM3 5H2V7H3V5ZM21 7H22V5H21V7ZM11 11V10H9V11H11ZM9 16V17H11V16H9ZM15 11V10H13V11H15ZM13 16V17H15V16H13ZM4.00221 6.06652L5.00221 21.0665L6.99779 20.9335L5.99779 5.93348L4.00221 6.06652ZM6 22H18V20H6V22ZM18.9978 21.0665L19.9978 6.06652L18.0022 5.93348L17.0022 20.9335L18.9978 21.0665ZM19 5H5V7H19V5ZM3 7H5V5H3V7ZM19 7H21V5H19V7ZM9 11V16H11V11H9ZM13 11V16H15V11H13ZM12 4C13.3965 4 14.5725 4.95512 14.9055 6.24926L16.8424 5.75074C16.2874 3.59442 14.3312 2 12 2V4ZM9.09445 6.24926C9.42754 4.95512 10.6035 4 12 4V2C9.66883 2 7.71258 3.59442 7.15758 5.75074L9.09445 6.24926Z"
+                    fill="#666666"
+                  />
+                </svg>
+                <span class="ms-3 d-none d-sm-inline">Deleted</span></a
+              >
+            </li>
+          </ul>
+        </aside>
+        <div class="content col-sm-12 col-md-8">
+          <div class="content__topBlock">
+            <div class="content__subscription d-flex align-items-center justify-content-center">
+              <h1 class="h1 me-auto mb-1">All photos</h1>
+              <div class="content__sortByDate">
+                <div class="btn-group" role="group">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="btnradio"
+                    id="btnradio1"
+                    autocomplete="off"
+                    checked="checked"
+                  />
+                  <label class="btn btn-outline-dark" for="btnradio1">Newest</label>
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
+                  <label class="btn btn-outline-dark" for="btnradio2">Latest</label>
+                </div>
+              </div>
+            </div>
+            <span class="img__count">150 items</span>
+          </div>
+          <ul class="cards-list d-flex row p-0"></ul>
+        </div>
+      </div>
+    </main>
+    <script src="./js/bundle.js"></script>
+  </body>
+</html>

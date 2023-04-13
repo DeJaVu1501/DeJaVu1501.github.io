@@ -1,0 +1,70 @@
+.header {
+    border-bottom: 1px solid $border-color-light;
+
+    .navbar {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    position: relative;
+                    color: $grey-light;
+
+                    &.active {
+                        font-weight: 700;
+                        color: $dark;
+
+                        &::after {
+                            content: '';
+                            height: 2px;
+                            position: absolute;
+                            bottom: -16px;
+                            right: 0;
+                            left: 0;
+                            background: $primary;
+
+                            @media (max-width:'992px') {
+                                bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .search {
+            position: relative;
+            max-width: 546px;
+
+            @media (max-width:'1140px') {
+                max-width: 70%;
+            }
+
+            .search__icon {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 16px;
+            }
+
+            .form-control {
+                background: #EEEEEE;
+                border: none;
+
+                &::placeholder {
+                    color: $grey-light;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .form-select {
+            border: none;
+            color: $grey-light;
+            cursor: pointer;
+        }
+
+        .signInLink {
+            text-decoration: none;
+            color: $grey-light;
+        }
+    }
+}
